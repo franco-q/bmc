@@ -1,0 +1,61 @@
+{
+	"private": true,
+	"scripts": {
+		"dev": "npm run development",
+		"development": "mix",
+		"watch": "mix watch",
+		"watch-poll": "mix watch -- --watch-options-poll=1000",
+		"hot": "mix watch --hot",
+		"prod": "npm run production",
+		"production": "mix --production"
+	},
+	"devDependencies": {
+		"@tailwindcss/forms": "^0.2.1",
+		"@tailwindcss/typography": "^0.3.0",
+		"@vue/compiler-sfc": "^3.0.5",
+		"eslint": "^7.23.0",
+		"eslint-plugin-vue": "^7.8.0",
+		"laravel-mix": "^6.0.6",
+		"node-sass": "^5.0.0",
+		"postcss": "^8.1.14",
+		"postcss-import": "^12.0.1",
+		"resolve-url-loader": "3.1.2",
+		"sass": "^1.32.8",
+		"sass-loader": "11.0.1",
+		"tailwindcss": "^2.0.1",
+		"vue-loader": "^15.9.6",
+		"vue-template-compiler": "^2.6.12"
+	},
+	"dependencies": {
+		"element-ui": "^2.13.2",
+		"es6-promise": "^4.2.8",
+		"@inertiajs/inertia": "^0.8.6",
+		"@inertiajs/inertia-vue": "^0.5.8",
+		"@inertiajs/progress": "^0.2.4",
+		"axios": "^0.21",
+		"bootstrap": "^4.5.0",
+		"lodash": "^4.17.19",
+		"vue": "^2.6.12",
+		"vee-validate": "^3.3.0",
+		"vue2-transitions": "^0.3.0"
+	},
+	"prettier": {
+		"arrowParens": "avoid",
+		"bracketSpacing": true,
+		"embeddedLanguageFormatting": "auto",
+		"htmlWhitespaceSensitivity": "strict",
+		"insertPragma": false,
+		"jsxBracketSameLine": true,
+		"jsxSingleQuote": false,
+		"printWidth": 100,
+		"proseWrap": "always",
+		"quoteProps": "consistent",
+		"requirePragma": false,
+		"semi": false,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "none",
+		"useTabs": true,
+		"vueIndentScriptAndStyle": true
+	}
+}
