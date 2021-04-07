@@ -11,18 +11,18 @@
 
 			<template #content>
 				{{ content }}
-
 				<div class="mt-4">
-					<jet-input
+					<base-input
 						type="password"
-						class="mt-1 block w-3/4"
-						placeholder="Contraseña"
 						ref="password"
+						placeholder="Contraseña"
 						v-model="form.password"
+						id="password"
+						:error="form.error"
+						autocomplete="current-password"
+						:class="{ 'has-danger': form.error }"
 						@keyup.enter="confirmPassword"
 					/>
-
-					<jet-input-error :message="form.error" class="mt-2" />
 				</div>
 			</template>
 
@@ -46,8 +46,8 @@
 <script>
 	// import JetButton from './Button'
 	import JetDialogModal from './DialogModal'
-	import JetInput from './Input'
-	import JetInputError from './InputError'
+	// import JetInput from './Input'
+	// import JetInputError from './InputError'
 	// import JetSecondaryButton from './SecondaryButton'
 
 	export default {
@@ -67,9 +67,9 @@
 
 		components: {
 			// JetButton,
-			JetDialogModal,
-			JetInput,
-			JetInputError,
+			JetDialogModal
+			// JetInput,
+			// JetInputError
 			// JetSecondaryButton
 		},
 

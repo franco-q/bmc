@@ -5,8 +5,8 @@
 </template>
 
 <script>
-	import AuthLayout from '@/vue/Pages/AuthLayout'
-	import Pricing from '../vue/Pages/Pricing'
+	import AuthLayout from '@/Layouts/AuthLayout'
+	import Pricing from '@/vue/Pages/Pricing'
 	export default {
 		components: {
 			AuthLayout,

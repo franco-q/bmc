@@ -22,7 +22,7 @@
 		<!-- Delete Account Confirmation Modal -->
 		<jet-dialog-modal :show="confirmingUserDeletion" @close="closeModal">
 			<template #title>
-				BORRAR CUENTA
+				Borrar cuenta
 			</template>
 
 			<template #content>
@@ -31,16 +31,16 @@
 				contraseña para confirmar que desea eliminar permanentemente su cuenta.
 
 				<div class="mt-4">
-					<jet-input
-						type="password"
-						class="mt-1 block w-3/4"
-						placeholder="Contraseña"
+					<base-input
 						ref="password"
+						placeholder="Contraseña"
 						v-model="form.password"
+						id="password"
+						:error="form.errors.password"
+						autocomplete="current-password"
+						:class="{ 'has-danger': form.errors.password }"
 						@keyup.enter="deleteUser"
 					/>
-
-					<jet-input-error :message="form.errors.password" class="mt-2" />
 				</div>
 			</template>
 
@@ -64,19 +64,19 @@
 <script>
 	// import JetActionSection from '@/Jetstream/ActionSection'
 	import JetDialogModal from '@/Jetstream/DialogModal'
-	import JetDangerButton from '@/Jetstream/DangerButton'
-	import JetInput from '@/Jetstream/Input'
-	import JetInputError from '@/Jetstream/InputError'
-	import JetSecondaryButton from '@/Jetstream/SecondaryButton'
+	// import JetDangerButton from '@/Jetstream/DangerButton'
+	// import JetInput from '@/Jetstream/Input'
+	// import JetInputError from '@/Jetstream/InputError'
+	// import JetSecondaryButton from '@/Jetstream/SecondaryButton'
 
 	export default {
 		components: {
 			// JetActionSection,
-			JetDangerButton,
-			JetDialogModal,
-			JetInput,
-			JetInputError,
-			JetSecondaryButton
+			// JetDangerButton,
+			JetDialogModal
+			// JetInput,
+			// JetInputError,
+			// JetSecondaryButton
 		},
 
 		data() {

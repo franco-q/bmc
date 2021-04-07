@@ -1,4 +1,4 @@
-const mix = require("laravel-mix");
+const mix = require('laravel-mix')
 
 /*
  |--------------------------------------------------------------------------
@@ -11,19 +11,20 @@ const mix = require("laravel-mix");
  |
  */
 
-mix.js("resources/js/app.js", "public/js")
-    .vue({ version: 2 })
-    .css("resources/css/nucleo-icons.css", "public/css")
-    .postCss("resources/css/app.css", "public/css", [
-        require("postcss-import"),
-        require("tailwindcss")
-    ])
-    .sass("resources/sass/black-dashboard-pro.scss", "public/css", {
-        implementation: require("node-sass")
-    })
-    .sourceMaps()
-    .webpackConfig(require("./webpack.config"));
+mix.js('resources/js/app.js', 'public/js')
+	.vue({ version: 2 })
+	.css('resources/css/nucleo-icons.css', 'public/css')
+	.postCss('resources/css/app.css', 'public/css', [
+		require('postcss-import'),
+		require('tailwindcss')
+	])
+	.sass('resources/sass/black-dashboard-pro.scss', 'public/css', {
+		implementation: require('node-sass')
+	})
+	.disableSuccessNotifications()
+	.sourceMaps()
+	.webpackConfig(require('./webpack.config'))
 
 if (mix.inProduction()) {
-    mix.version();
+	mix.version()
 }

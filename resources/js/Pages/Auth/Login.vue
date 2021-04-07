@@ -8,11 +8,11 @@
 				<div class="col-lg-4 col-md-6 ml-auto mr-auto">
 					<ValidationObserver v-slot="{ handleSubmit }">
 						<form @submit.prevent="handleSubmit(submit)">
-							<card class="card-login card-white">
-								<template slot="header">
-									<img src="img/card-primary.png" alt="" />
-									<h1 class="card-title p-3">Log in</h1>
-								</template>
+							<div class="px-3 py-4 d-flex justify-content-center">
+								<Brand class="w-20" />
+							</div>
+							<card class="card-login card-white" :subTitle="'iniciar sesion'">
+								<h4 class="text-center text-muted">Iniciar sesión</h4>
 								<div>
 									<ValidationProvider
 										name="email"
@@ -51,8 +51,9 @@
 								<div slot="footer">
 									<base-button
 										native-type="submit"
-										type="primary"
+										type="success"
 										class="mb-1"
+										round
 										:class="{ 'opacity-25': form.processing }"
 										:disabled="form.processing"
 										size="lg"
@@ -83,6 +84,7 @@
 	import { BaseButton } from '@/components'
 	import { extend } from 'vee-validate'
 	import { required, email, min } from 'vee-validate/dist/rules'
+	import Brand from '@/components/Brand'
 
 	extend('email', email)
 	extend('min', min)
@@ -90,7 +92,8 @@
 
 	export default {
 		components: {
-			BaseButton
+			BaseButton,
+			Brand
 		},
 
 		props: {

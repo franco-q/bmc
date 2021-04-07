@@ -62,7 +62,7 @@
 							>
 								Este dispositivo
 							</span>
-							<span v-else>Last active {{ session.last_active }}</span>
+							<span v-else>Ultima actividad {{ session.last_active }}</span>
 						</div>
 					</div>
 				</div>

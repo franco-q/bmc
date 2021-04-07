@@ -4,10 +4,10 @@
 			<div class="container pt-5">
 				<div class="row mt-5">
 					<div class="col-lg-5 col-md-6 mr-lg-auto">
-						<Brand lg />
+						<Brand height="150"/>
 						<div class="info-area info-horizontal mt-5">
 							<div class="description">
-								<h3 class="info-title">Crar nueva cuenta</h3>
+								<h3 class="info-title">Crear nueva cuenta</h3>
 								<p class="description">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
 									obcaecati fugit corporis esse facilis temporibus sint magni, ab
@@ -93,7 +93,7 @@
 									<base-button
 										native-type="submit"
 										slot="footer"
-										type="primary"
+										type="success"
 										round
 										block
 										size="lg"

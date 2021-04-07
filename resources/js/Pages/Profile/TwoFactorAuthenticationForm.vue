@@ -58,7 +58,7 @@
 				<jet-confirms-password @confirmed="enableTwoFactorAuthentication">
 					<base-button
 						native-type="button"
-						type="primary"
+						type="success"
 						class="btn-fill "
 						:disabled="enabling"
 					>

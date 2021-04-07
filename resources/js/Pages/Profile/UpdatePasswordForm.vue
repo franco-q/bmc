@@ -40,7 +40,7 @@
 			<div slot="footer" class="d-flex justify-content-center justify-content-md-end">
 				<base-button
 					native-type="submit"
-					type="primary"
+					type="success"
 					class="btn-fill "
 					:disabled="form.processing"
 				>

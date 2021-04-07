@@ -17,7 +17,7 @@
             </div>
 
             <div class="flex justify-end mt-4">
-                <jet-button class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                <jet-button type="info" class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Confirm
                 </jet-button>
             </div>

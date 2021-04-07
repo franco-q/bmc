@@ -2,11 +2,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 mx-auto text-center mb-3">
-				<h1 class="title">Elija el mejor plan para usted</h1>
+				<div class="d-flex justify-content-center mb-3">
+					<Brand class="w-20" />
+				</div>
+				<h1>Elija el mejor plan para usted</h1>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4 col-8 mx-auto">
+			<div class="col-md-4 col-11 mx-auto">
 				<card
 					type="pricing"
 					class="card-success card-white"
@@ -30,8 +33,7 @@
 					</base-button>
 				</card>
 			</div>
-
-			<div class="col-md-4 col-8 mx-auto">
+			<div class="col-md-4 col-11 mx-auto">
 				<card
 					type="pricing"
 					class="card-warning card-raised card-white"
@@ -55,7 +57,7 @@
 					</base-button>
 				</card>
 			</div>
-			<div class="col-md-4 col-8 mx-auto">
+			<div class="col-md-4 col-11 mx-auto">
 				<card
 					type="pricing"
 					class="card-danger card-white"
@@ -101,10 +103,11 @@
 </template>
 <script>
 	import { BaseProgress } from '@/components'
-
+	import Brand from '@/components/Brand'
 	export default {
 		name: 'pricing-page',
 		components: {
+			Brand,
 			BaseProgress
 		}
 	}
