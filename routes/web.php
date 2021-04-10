@@ -27,7 +27,7 @@ Route::get('/', function () {
 Route::get('/deposit', function () {
     return Inertia::render('Deposit', [
     ]);
-});
+})->name('deposit');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');

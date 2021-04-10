@@ -7,8 +7,10 @@
 			menu-classes="justify-content-end"
 			class="auth-navbar"
 		>
-			<div slot="brand" class="navbar-wrapper" v-if="title">
-				<a class="navbar-brand" href="#" v-if="title">{{ title }}</a>
+			<div slot="brand" class="navbar-wrapper">
+				<a class="navbar-brand" href="#">
+					<Brand class="h-9" />
+				</a>
 			</div>
 
 			<ul class="navbar-nav">
@@ -28,11 +30,9 @@
 
 		<div class="wrapper wrapper-full-page">
 			<div class="full-page">
-				<div class="pt-md-5">
-					<zoom-center-transition :duration="pageTransitionDuration" mode="out-in">
-						<slot></slot>
-					</zoom-center-transition>
-				</div>
+				<zoom-center-transition :duration="pageTransitionDuration" mode="out-in">
+					<slot></slot>
+				</zoom-center-transition>
 			</div>
 		</div>
 	</div>
@@ -40,10 +40,12 @@
 <script>
 	import { BaseNav } from '@/components'
 	import { ZoomCenterTransition } from 'vue2-transitions'
+	import Brand from '@/components/Brand'
 
 	export default {
 		components: {
 			BaseNav,
+			Brand,
 			ZoomCenterTransition
 		},
 		props: {

@@ -25,13 +25,13 @@
 					</card>
 				</div>
 				<div class="col-md-6">
-					<Gcard class="w-100"/>
+					<Gcard class="w-100" />
 				</div>
 				<div class="col-12">
 					<div class="btn-group w-100 mb-3">
-						<base-button type="info">
+						<inertia-link :href="route('deposit')" class=" btn btn-info">
 							DEPOSITAR
-						</base-button>
+						</inertia-link>
 						<base-button type="primary">
 							RETIRAR
 						</base-button>

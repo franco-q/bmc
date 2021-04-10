@@ -39,6 +39,7 @@
 		"vee-validate": "^3.3.0",
 		"vue": "^2.6.12",
 		"vue-chartjs": "^3.5.1",
+		"vue-qr-generator": "^3.0.1",
 		"vue2-transitions": "^0.3.0"
 	},
 	"prettier": {
